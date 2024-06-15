@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 1</title>
+    <style>
+        .box{
+    position: relative;
+    top: 10vh;
+    border: 3px solid orange;
+    margin: 15px;
+    height: 14vh;
+    width: 14vw;
+}
+.shape{
+    display: flex;
+    justify-content: center;
+}
+#rect1{
+    border-radius: 8px;
+}
+#rect2{
+    border-radius: 25px;
+}
+#oval{
+    border-radius: 50%;
+}
+#diff{
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#d1{
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+table{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #92decc;
+    width: 80%;
+}
+
+td,th{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #92decc;
+}
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="shape" id="shape1">
+        <div id="rect1" class="box"></div>
+        <div id="rect1" class="box"></div>
+        <div id="rect2" class="box"></div>   
+    </div>
+    <div class="shape" id="shape2">
+        <div id="rect1" class="box"></div>
+        <div id="rect" class="box"></div>
+        <div id="rect2" class="box"></div>
+    </div>
+    <div class="shape" id="shape3">
+        <div id="oval" class="box"></div>
+        <div id="rect" class="box"></div>
+        <div id="diff" class="box"></div>
+    </div>
+    
+</body>
+</html>
